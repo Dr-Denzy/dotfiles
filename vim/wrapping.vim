@@ -46,8 +46,3 @@ function! UnwrapIt()
   silent! iunmap <buffer> <Home>
   silent! iunmap <buffer> <End>
 endfunction
-
-if &wrap
-  call WrapIt()
-endif
-
