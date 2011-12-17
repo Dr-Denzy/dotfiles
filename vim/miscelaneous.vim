@@ -2,9 +2,6 @@
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
-" open ~/.vimrc
-map ,; :tabe ~/.vimrc<CR><C-W>_
-
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
