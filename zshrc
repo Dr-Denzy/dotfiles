@@ -60,6 +60,9 @@ export EYRC=./.eyrc
 setopt auto_pushd
 export dirstacksize=5
 
+# Always use -r with less
+export LESS="-R"
+
 # Allows me to cd into projects
 cdpath=(. ~/code/thoughtbot/ ~/code/play/ ~/code/src/)
 typeset -gU cdpath
@@ -127,3 +130,4 @@ zstyle ':completion:*:default' list-prompt '%S%M matches%s'
 # reload completion
 autoload -Uz compinit
 compinit
+
