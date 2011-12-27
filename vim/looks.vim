@@ -13,19 +13,9 @@ set cursorline                    " highlight cursor line
 set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+
 set list                          " show trailing whiteshace and tabs
 
-
-if has('gui_running')
-  set guioptions-=T
-  set guioptions-=m
-  set guioptions-=l
-  set guioptions-=r
-  set guioptions-=R
-  set guioptions-=L
-  set mousehide
-  set guifont=Bitstream\ Vera\ Sans\ Mono:h16
-  set t_Co=256
-  :colorscheme github
-endif
+set t_Co=256
+set background=dark
+colorscheme grb256
 
 set numberwidth=4
 set relativenumber
