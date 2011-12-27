@@ -9,7 +9,6 @@ set wildignore=*.o,*.obj,*~,*.swp " ignore when tab completing:
 set backspace=indent,eol,start    " Intuitive backspacing in insert mode
 set shortmess=atI
 set visualbell                    " get rid of the BEEP
-set scrolloff=3                   " Provide three lines of context
 set autowrite                     " Automatically save before commands like :next
 set showcmd                       " display incomplete commands
 
