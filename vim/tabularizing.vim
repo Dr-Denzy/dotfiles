@@ -13,5 +13,5 @@ function! s:align()
   endif
 endfunction
 
-nmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
+noremap <Leader>a= :Tabularize /=<CR>
+noremap <Leader>a: :Tabularize /:\zs<CR>
