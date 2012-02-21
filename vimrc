@@ -12,24 +12,8 @@ set visualbell                    " get rid of the BEEP
 set autowrite                     " Automatically save before commands like :next
 set showcmd                       " display incomplete commands
 
-let g:ruby_path = "~/.rvm/rubies/default/bin"
+let mapleader = " "
 
-source $HOME/.vim/pathogen.vim
-source $HOME/.vim/miscelaneous.vim
-source $HOME/.vim/number.vim
-source $HOME/.vim/wrapping.vim
-source $HOME/.vim/copypaste.vim
-source $HOME/.vim/backups.vim
-source $HOME/.vim/looks.vim
-source $HOME/.vim/searching.vim
-source $HOME/.vim/abbreviations.vim
-source $HOME/.vim/githelpers.vim
-source $HOME/.vim/autocomplete.vim
-source $HOME/.vim/session.vim
-source $HOME/.vim/privates.vim
-source $HOME/.vim/buffers.vim
-source $HOME/.vim/tabularizing.vim
-source $HOME/.vim/ruby-blocks.vim
-source $HOME/.vim/windows.vim
-source $HOME/.vim/jumping_around.vim
-source $HOME/.vim/running_tests.vim
+for rc_file in split(glob('~/.vim/rc/*.vim'), '\n')
+  exec 'source ' .  rc_file
+endfor

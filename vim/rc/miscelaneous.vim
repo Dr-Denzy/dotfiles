@@ -19,8 +19,6 @@ let g:rubycomplete_rails = 1
 "clojure.vim
 let clj_highlight_builtins = 1
 
-let mapleader = " "
-
 nnoremap <Leader>h :nohls<CR><C-L>
 
 

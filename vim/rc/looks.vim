@@ -15,7 +15,8 @@ set list                          " show trailing whiteshace and tabs
 
 set t_Co=256
 set background=dark
-colorscheme grb256
+let g:solarized_termcolors=16
+colorscheme solarized
 
 set numberwidth=4
 set relativenumber
