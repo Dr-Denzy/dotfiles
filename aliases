@@ -36,3 +36,4 @@ alias md='mkdir -p'
 alias rrake='/usr/bin/rake'
 
 alias bake='bundle exec rake'
+alias h="heroku"
