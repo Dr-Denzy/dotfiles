@@ -33,3 +33,4 @@ alias bake='bundle exec rake'
 alias h="heroku"
 alias hr="heroku run"
 alias hl="heroku logs --tail"
+alias hpsql="heroku pg:psql"
