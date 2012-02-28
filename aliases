@@ -1,6 +1,5 @@
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:migrate && bundle exec rake db:migrate:redo && bundle exec rake db:schema:dump db:test:prepare"
-alias remongrate="bundle exec rake mongoid:migrate && bundle exec rake mongoid:migrate:redo"
 alias g="git"
 alias s="bundle exec rspec --format=documentation"
 alias t="ruby -Itest -iruby-debug"
@@ -22,10 +21,6 @@ alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 
-alias rv="mvim --remote"
-alias rc="rails c"
-alias rg="rails g"
-alias rdb="rails db"
 alias :q="exit"
 
 alias lsa='ls -lah'
@@ -33,7 +28,6 @@ alias l='ls -la'
 alias ll='ls -l'
 alias md='mkdir -p'
 
-alias rrake='/usr/bin/rake'
-
 alias bake='bundle exec rake'
+
 alias h="heroku"
