@@ -39,7 +39,7 @@
 
 [user]
   name = Harold Giménez
-  email = hgimenez@thoughtbot.com
+  email = harold.gimenez@gmail.com
 [branch "master"]
   rebase = true
 [remote "origin"]
