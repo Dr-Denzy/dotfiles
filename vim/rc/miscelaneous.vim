@@ -56,7 +56,6 @@ cnoremap %% <C-R>=expand('%:p:h').'/'<cr>
 " Opens an edit command with the path of the currently edited file filled in
 map <Leader>e :e %%
 map <Leader>s :split %%
-map <Leader>v :vsplit %%
 " map <Leader>t :tabnew %%
 
 autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb

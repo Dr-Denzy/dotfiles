@@ -48,6 +48,7 @@ function! AlternateForCurrentFile()
 endfunction
 
 nnoremap <leader>. :call OpenTestAlternate()<cr>
+nnoremap <leader>v. :vsplit<cr> :call OpenTestAlternate()<cr>
 
 map <leader>gl :CtrlP lib<cr>
 map <leader>gp :CtrlP public<cr>
