@@ -1,0 +1,47 @@
+#!/usr/bin/ruby
+
+class Deployer
+  attr_accessor :remote
+  def initialize(remote)
+    @remote = remote
+  end
+
+  def deploy
+    ensure_clean_git
+    ensure_master_branch if remote.match /.*production.*/
+    sync_origin
+    push_to_heroku
+    migrate_database
+    restart_web_workers
+  end
+
+  def ensure_clean_git
+    system('git diff --exit-code') or raise "Can't deploy with a dirty git repository"
+  end
+
+  def ensure_master_branch
+    raise "Must deploy to production from master branch" unless current_branch == 'master'
+  end
+
+  def sync_origin
+    system("git push origin #{current_branch}")
+  end
+
+  def push_to_heroku
+    system("git push -f #{remote} #{current_branch}:master")
+  end
+
+  def migrate_database
+    system("heroku run rake db:migrate --remote #{remote}")
+  end
+
+  def restart_web_workers
+    system("heroku restart web --remote #{remote}")
+  end
+
+  def current_branch
+    @current_branch ||= `git symbolic-ref HEAD`.sub("refs/heads/", "").strip
+  end
+end
+
+Deployer.new(ARGV[0] || "staging").deploy

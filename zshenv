@@ -7,8 +7,8 @@ export GOBIN=/usr/local/bin
 export GOARCH=x86_64
 export GOOS=darwin
 
-# favor homebrew
-export PATH=~/bin:/usr/local/bin:$PATH
+# favor user .bin and homebrew
+export PATH=~/.bin:/usr/local/bin:$PATH
 
 # load history
 export HISTFILE=~/.history
