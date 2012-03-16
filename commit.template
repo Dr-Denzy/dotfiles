@@ -1,0 +1,7 @@
+Subject line below 80 chars
+
+* Explain what happened
+* How it affects users or other code consumers
+* Use a bullet list if necessary
+
+[Closes Issue #X]

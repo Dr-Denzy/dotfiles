@@ -43,3 +43,5 @@
   rebase = true
 [remote "origin"]
   push = HEAD
+[commit]
+  template = /Users/hgimenez/.commit.template
