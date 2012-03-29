@@ -35,6 +35,9 @@
   unfuck = reset --hard HEAD
   cob = checkout -b
   rmb = !sh -c 'git branch -D $1 && git push origin :$1' -
+  pl = pull
+  pul = pull
+  pull = pull
   pulll = pull
   pullll = pull
   pulllll = pull
