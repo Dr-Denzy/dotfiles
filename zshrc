@@ -7,6 +7,9 @@ setopt auto_cd
 # use vim as an editor
 export EDITOR=vim
 
+# and configure psql to set ft too
+export PSQL_EDITOR="vim -c ':set ft=sql'"
+
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
