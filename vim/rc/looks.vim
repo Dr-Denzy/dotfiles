@@ -2,7 +2,7 @@
 " Looks
 """""""""""""""""""""""""""""""""
 syntax on
-set foldmethod=syntax
+set foldmethod=indent
 set foldnestmax=3                 " deepest fold level
 set nofoldenable                  " don't fold by default
 set ruler                         " always show the cursor position
