@@ -1,12 +1,6 @@
 # make compilers happy
 export ARCHFLAGS='-arch x86_64'
 
-# go compiler appeasement
-export GOROOT=`brew --cellar`/go/HEAD
-export GOBIN=/usr/local/bin
-export GOARCH=x86_64
-export GOOS=darwin
-
 # favor user .bin and homebrew
 export PATH=~/.bin:/usr/local/bin:$PATH
 
