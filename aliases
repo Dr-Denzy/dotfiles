@@ -38,4 +38,4 @@ alias hb="heroku run bash"
 
 alias ct="ctags -R -exclude=tmp --exclude=log"
 
-alias judo="sudo"
+alias -g judo="sudo"
