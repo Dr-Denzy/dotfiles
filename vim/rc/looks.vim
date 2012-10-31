@@ -15,8 +15,7 @@ set list                          " show trailing whiteshace and tabs
 
 set t_Co=256
 set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
+colorscheme jellybeans
 
 set numberwidth=4
 set relativenumber
