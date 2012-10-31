@@ -21,7 +21,7 @@
   pl = pull
   ps = push
   plre = pull --rebase
-  st = status
+  st = status -sb
   out = log origin..HEAD
   qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master
   graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
