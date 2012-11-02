@@ -24,7 +24,7 @@ nnoremap <Leader>h :nohls<CR><C-L>
 
 nmap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-set tabstop=2 shiftwidth=2 expandtab " Set two space tabs:
+autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et " Set two space tabs
 
 set splitbelow                    " Split windows at bottom
 set splitright                    " VSplit windows to the right
