@@ -12,16 +12,7 @@ function! SmartTab()
   elseif strpart( getline('.'), col('.')-2, 1 ) == ' '
     return "\<Tab>"
   else
-    if &omnifunc != ''
-      " omni-completion
-      return "\<C-X>\<C-O>"
-    elseif &dictionary != ''
-      " dictionary completion
-      return "\<C-K>"
-    else
-      " known-word completion
-      return "\<C-N>"
-    endif
+    return "\<C-N>"
   endif
 endfunction
 inoremap <Tab> <C-R>=SmartTab()<cr>
