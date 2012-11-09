@@ -67,7 +67,7 @@ export dirstacksize=5
 export LESS="-R"
 
 # Allows me to cd into projects
-cdpath=(. ~/dev/)
+cdpath=(. ~/src/)
 typeset -gU cdpath
 
 PATH=~/bin:~/bin/scripts:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin:$PATH
