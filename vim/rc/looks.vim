@@ -14,8 +14,8 @@ set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+
 set list                          " show trailing whiteshace and tabs
 
 set t_Co=256
-set background=dark
-colorscheme jellybeans
+" set background=dark
+colorscheme smyck
 
 set numberwidth=4
 set relativenumber
