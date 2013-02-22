@@ -4,6 +4,5 @@
 \x auto
 \set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
 \set PROMPT2 ''
-\set AUTOCOMMIT off
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTCONTROL ignoredups
