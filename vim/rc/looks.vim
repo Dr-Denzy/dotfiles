@@ -19,3 +19,5 @@ colorscheme smyck
 
 set numberwidth=4
 set relativenumber
+
+match Error /\%80v.\+/
