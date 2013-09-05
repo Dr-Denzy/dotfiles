@@ -24,7 +24,10 @@ nnoremap <Leader>h :nohls<CR><C-L>
 
 nmap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et " Set two space tabs
+" Set two space tabs
+autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et 
+" Git commit formatting
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 set splitbelow                    " Split windows at bottom
 set splitright                    " VSplit windows to the right
