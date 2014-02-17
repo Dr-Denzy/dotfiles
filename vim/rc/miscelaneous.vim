@@ -28,6 +28,8 @@ nmap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et 
 " Git commit formatting
 autocmd Filetype gitcommit setlocal spell textwidth=72
+" Postgres docs
+autocmd FileType sgml setlocal expandtab textwidth=70 tabstop=2 shiftwidth=2 autoindent
 
 set splitbelow                    " Split windows at bottom
 set splitright                    " VSplit windows to the right

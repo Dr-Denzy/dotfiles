@@ -8,7 +8,7 @@ set nofoldenable                  " don't fold by default
 set ruler                         " always show the cursor position
 set showmatch                     " show matching brackets.
 set mat=5                         " bracket blinking.
-set laststatus=2                  " always show status line (not only for multiple windows)
+set laststatus=2                  " always show status line
 set cursorline                    " highlight cursor line
 set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+
 set list                          " show trailing whiteshace and tabs
@@ -20,4 +20,6 @@ colorscheme smyck
 set numberwidth=4
 set relativenumber
 
-match Error /\%80v.\+/
+" OR ELSE just the 81st column of wide lines...
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)

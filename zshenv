@@ -12,3 +12,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
+
+# postgres.app
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
